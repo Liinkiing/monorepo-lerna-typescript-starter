@@ -1,0 +1,38 @@
+{
+  "name": "@monorepo-lerna-typescript-starter/backend",
+  "version": "1.0.0",
+  "description": "A simple Rollup starter to starts writing Node applications with Typescript",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "repository": "https://github.com/Liinkiing/node-rollup-typescript-starter",
+  "author": "Omar Jbara <omar.jbara2@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "rollup",
+    "typescript",
+    "template",
+    "starter",
+    "boilerplate",
+    "node"
+  ],
+  "scripts": {
+    "prestart": "yarn build",
+    "start": "cross-env NODE_ENV=production node -r dotenv-flow/config dist/cjs/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "build": "rimraf dist && rollup -c",
+    "build:watch": "rimraf dist && rollup -c -w",
+    "lint": "eslint --no-error-on-unmatched-pattern --cache --fix --report-unused-disable-directives src/**/*.{js,ts}"
+  },
+  "dependencies": {
+    "@monorepo-lerna-typescript-starter/shared": "*",
+    "cross-env": "^7.0.2",
+    "dotenv-flow": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0"
+  }
+}
