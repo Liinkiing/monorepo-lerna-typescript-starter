@@ -1,8 +1,21 @@
 {
   "name": "monorepo-lerna-typescript-starter",
+  "description": "A lerna starter to starts writing monorepo with Typescript",
+  "repository": "https://github.com/Liinkiing/monorepo-lerna-typescript-starter",
+  "keywords": [
+    "monorepo",
+    "lerna",
+    "rollup",
+    "typescript",
+    "template",
+    "starter",
+    "boilerplate",
+    "node",
+    "next"
+  ],
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Omar Jbara",
+  "author": "Omar Jbara <omar.jbara2@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
