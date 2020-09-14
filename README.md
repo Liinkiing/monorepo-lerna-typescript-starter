@@ -91,3 +91,8 @@ the next application. For the frontend app, you even have the auto reloading fea
 shared package!
 See `main` and `modules` in the **package.json**. The TypeScript typings definitions are also exported.
 You can also use, as for the other packages, the `~` alias (see `packages/shared/src/index.ts`)
+
+## Tooling
+
+The template includes [Prettier](https://prettier.io/), [ESLint](https://eslint.org/) (with [Typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)), [Babel](https://babeljs.io/) and [Husky](https://github.com/typicode/husky).
+All their related configurations are in the `*rc` files, and it works across all the packages.
