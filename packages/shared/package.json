@@ -7,8 +7,11 @@
   "types": "dist/esm/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && rollup -c",
-    "build:watch": "rimraf dist && rollup -c --watch",
+    "clean": "rimraf dist",
+    "prepack": "yarn build",
+    "dev": "yarn build:watch",
+    "build": "yarn clean && rollup -c",
+    "build:watch": "rollup -c --watch",
     "lint": "eslint --no-error-on-unmatched-pattern --cache --fix --report-unused-disable-directives src/**/*.{js,ts}"
   }
 }
