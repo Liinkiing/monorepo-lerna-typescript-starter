@@ -21,19 +21,19 @@ You must launch the scripts at the root level.
 # install all workspaces deps, no need to lerna bootstrap
 yarn install
 
-# run start across all packages
+# run in parallel start across all packages
 yarn start 
 
-# run dev across all packages
+# run in parallel dev across all packages
 yarn dev 
 
-# run test across all packages
+# run in parallel test across all packages
 yarn test 
 
-# run lint across all packages
+# run in parallel lint across all packages
 yarn lint
 
-# run build across all packages
+# run in parallel build across all packages
 yarn build
 
 # run lint in the frontend package
