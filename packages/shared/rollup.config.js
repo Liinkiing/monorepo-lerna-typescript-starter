@@ -28,6 +28,7 @@ const base = {
     }),
     resolve({ preferBuiltins: true }),
     eslint({
+      include: ['src/**'],
       configFile: './.eslintrc',
     }),
     ts(),

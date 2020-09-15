@@ -44,6 +44,7 @@ const config = {
     }),
     resolve({ preferBuiltins: true }),
     eslint({
+      include: ['src/**'],
       configFile: './.eslintrc',
     }),
     ts(),
